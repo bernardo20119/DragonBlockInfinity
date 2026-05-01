@@ -1,8 +1,6 @@
 package com.bernardo.dbi;
 
 import com.bernardo.dbi.client.KeyBindings;
-import com.bernardo.dbi.client.menu.MenuRouter;
-import com.bernardo.dbi.client.menu.screens.CharacterCreationScreen;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.client.event.RegisterKeyMappingsEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -14,8 +12,8 @@ public class ClientSetup {
 
     @SubscribeEvent
     public static void init(final FMLClientSetupEvent event) {
-        MenuRouter.register("character_creation", CharacterCreationScreen::new);
-        DragonBlockInfinity.LOGGER.info("DBI Client setup completo!");
+
+    
     }
 
     @SubscribeEvent
