@@ -1,6 +1,10 @@
 package com.bernardo.dbi.block;
 
 import com.bernardo.dbi.DragonBlockInfinity;
+import com.bernardo.dbi.block.blocks.BlockNamekDirt;
+import com.bernardo.dbi.block.blocks.BlockDirtyStone;
+import com.bernardo.dbi.block.blocks.BlockDirtyDirt;
+import com.bernardo.dbi.block.blocks.BlockDirtyCobblestone;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.material.MapColor;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -30,7 +34,10 @@ public class DBIBlocks {
     public static final RegistryObject<Block> BLOCK_PLUS_RED        = BLOCKS.register("block_plus_red",        () -> new BlockPlus(MapColor.COLOR_RED));
     public static final RegistryObject<Block> BLOCK_PLUS_BLACK      = BLOCKS.register("block_plus_black",      () -> new BlockPlus(MapColor.COLOR_BLACK));
     public static final RegistryObject<Block> BLOCK_NAMEKGRASS      = BLOCKS.register("block_namekgrass",      () -> new BlockNamekGrass());
-    public static final RegistryObject<Block> BLOCK_NAMEKDIRT = BLOCKS.register("block_namekdirt", () -> new com.bernardo.dbi.block.blocks.BlockNamekDirt());
+    public static final RegistryObject<Block> BLOCK_NAMEKDIRT       = BLOCKS.register("block_namekdirt",       () -> new BlockNamekDirt());
+    public static final RegistryObject<Block> DIRTY_STONE           = BLOCKS.register("dirty_stone",           BlockDirtyStone::new);
+    public static final RegistryObject<Block> DIRTY_DIRT            = BLOCKS.register("dirty_dirt",            BlockDirtyDirt::new);
+    public static final RegistryObject<Block> DIRTY_COBBLESTONE     = BLOCKS.register("dirty_cobblestone",     BlockDirtyCobblestone::new);
 
     public static void register(IEventBus bus) {
         BLOCKS.register(bus);

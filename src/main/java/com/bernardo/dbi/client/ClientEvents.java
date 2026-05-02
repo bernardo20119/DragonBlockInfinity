@@ -1,6 +1,6 @@
 package com.bernardo.dbi.client;
 
-import com.bernardo.dbi.client.menu.MenuRouter;
+import com.bernardo.dbi.client.menu.MenuControl;
 import net.minecraft.client.Minecraft;
 import net.minecraft.world.entity.player.Player;
 import net.minecraftforge.api.distmarker.Dist;
@@ -23,7 +23,7 @@ public class ClientEvents {
         }
 
         if (KeyBindings.CHARACTER_KEY.consumeClick()) {
-            MenuRouter.open("character_creation");
+            MenuControl.open(MenuControl.ID_CHARACTER_CREATION);
         }
 
         // TESTE: aura sempre ativa

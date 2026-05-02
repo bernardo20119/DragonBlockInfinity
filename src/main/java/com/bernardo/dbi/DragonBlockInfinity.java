@@ -1,6 +1,7 @@
 package com.bernardo.dbi;
 
 import com.bernardo.dbi.block.DBIBlocks;
+import com.bernardo.dbi.entity.ModEntities;
 import com.bernardo.dbi.item.DBIItems;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
@@ -21,6 +22,7 @@ public class DragonBlockInfinity {
         DBIBlocks.register(bus);
         DBIItems.register(bus);
         DBICreativeTab.register(bus);
+        ModEntities.ENTITIES.register(bus);
 
         bus.addListener(this::setup);
     }

@@ -42,6 +42,16 @@ public class DBICreativeTab {
                 output.accept(DBIItems.BLOCK_PLUS_BLACK.get());
                 output.accept(DBIItems.BLOCK_NAMEKGRASS.get());
                 output.accept(DBIItems.BLOCK_NAMEKDIRT.get());
+                output.accept(DBIItems.DIRTY_STONE.get());
+                output.accept(DBIItems.DIRTY_DIRT.get());
+                output.accept(DBIItems.DIRTY_COBBLESTONE.get());
+                output.accept(DBIItems.DINO_MEAT_RAW.get());
+                output.accept(DBIItems.DINO_MEAT_COOKED.get());
+                output.accept(DBIItems.SENZU_BEAN.get());
+                output.accept(DBIItems.GOKU_HELMET.get());
+                output.accept(DBIItems.GOKU_CHESTPLATE.get());
+                output.accept(DBIItems.GOKU_LEGGINGS.get());
+                output.accept(DBIItems.GOKU_BOOTS.get());
             })
             .build());
 
