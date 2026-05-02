@@ -8,16 +8,30 @@ import net.minecraft.world.item.crafting.Ingredient;
 public enum GokuArmorMaterial implements ArmorMaterial {
     INSTANCE;
 
-    private static final int[] PROTECTION = {2, 5, 6, 3};
+    private static final int[] PROTECTION = {5, 6, 3};
 
     @Override
     public int getDurabilityForType(net.minecraft.world.item.ArmorItem.Type type) {
-        return new int[]{195, 225, 240, 165}[type.ordinal()];
+        if (type == net.minecraft.world.item.ArmorItem.Type.CHESTPLATE) {
+            return 225;
+        } else if (type == net.minecraft.world.item.ArmorItem.Type.LEGGINGS) {
+            return 240;
+        } else if (type == net.minecraft.world.item.ArmorItem.Type.BOOTS) {
+            return 165;
+        }
+        return 0;
     }
 
     @Override
     public int getDefenseForType(net.minecraft.world.item.ArmorItem.Type type) {
-        return PROTECTION[type.ordinal()];
+        if (type == net.minecraft.world.item.ArmorItem.Type.CHESTPLATE) {
+            return PROTECTION[0];
+        } else if (type == net.minecraft.world.item.ArmorItem.Type.LEGGINGS) {
+            return PROTECTION[1];
+        } else if (type == net.minecraft.world.item.ArmorItem.Type.BOOTS) {
+            return PROTECTION[2];
+        }
+        return 0;
     }
 
     @Override

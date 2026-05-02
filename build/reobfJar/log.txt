@@ -140,11 +140,11 @@ Conflicting propagated mapping for com/bernardo/dbi/worldgen/FirstJoinWorldGen$D
 Conflicting propagated mapping for com/bernardo/dbi/client/menu/DBIGuiScreen/keyPressed(III)Z from net/minecraft/client/gui/screens/Screen/keyPressed(III)Z: keyPressed -> m_7933_
 Conflicting propagated mapping for com/bernardo/dbi/client/menu/DBIGuiScreen/isPauseScreen()Z from net/minecraft/client/gui/screens/Screen/isPauseScreen()Z: isPauseScreen -> m_7043_
 Conflicting propagated mapping for com/bernardo/dbi/client/menu/DBIGuiScreen/render(Lnet/minecraft/client/gui/GuiGraphics;IIF)V from net/minecraft/client/gui/screens/Screen/render(Lnet/minecraft/client/gui/GuiGraphics;IIF)V: render -> m_88315_
+Conflicting propagated mapping for com/bernardo/dbi/client/menu/screens/CaracterCreation/render(Lnet/minecraft/client/gui/GuiGraphics;IIF)V from com/bernardo/dbi/client/menu/DBIGuiScreen/render(Lnet/minecraft/client/gui/GuiGraphics;IIF)V: render -> m_88315_
 Conflicting propagated mapping for com/bernardo/dbi/client/widget/DBIBtnManager/updateWidgetNarration(Lnet/minecraft/client/gui/narration/NarrationElementOutput;)V from net/minecraft/client/gui/components/AbstractWidget/updateWidgetNarration(Lnet/minecraft/client/gui/narration/NarrationElementOutput;)V: updateWidgetNarration -> m_168797_
 Conflicting propagated mapping for com/bernardo/dbi/client/widget/DBIBtnManager/onClick(DD)V from net/minecraft/client/gui/components/AbstractWidget/onClick(DD)V: onClick -> m_5716_
 Conflicting propagated mapping for com/bernardo/dbi/client/widget/DBIBtnManager/renderWidget(Lnet/minecraft/client/gui/GuiGraphics;IIF)V from net/minecraft/client/gui/components/AbstractWidget/renderWidget(Lnet/minecraft/client/gui/GuiGraphics;IIF)V: renderWidget -> m_87963_
 Conflicting propagated mapping for com/bernardo/dbi/client/widget/DBIBtnManager/onRelease(DD)V from net/minecraft/client/gui/components/AbstractWidget/onRelease(DD)V: onRelease -> m_7691_
-Conflicting propagated mapping for com/bernardo/dbi/client/menu/screens/CaracterCreation/render(Lnet/minecraft/client/gui/GuiGraphics;IIF)V from com/bernardo/dbi/client/menu/DBIGuiScreen/render(Lnet/minecraft/client/gui/GuiGraphics;IIF)V: render -> m_88315_
 Conflicting propagated mapping for com/bernardo/dbi/client/widget/IconBtn/mouseClicked(DDI)Z from net/minecraft/client/gui/components/AbstractWidget/mouseClicked(DDI)Z: mouseClicked -> m_6375_
 Conflicting propagated mapping for com/bernardo/dbi/client/widget/IconBtn/updateWidgetNarration(Lnet/minecraft/client/gui/narration/NarrationElementOutput;)V from net/minecraft/client/gui/components/AbstractWidget/updateWidgetNarration(Lnet/minecraft/client/gui/narration/NarrationElementOutput;)V: updateWidgetNarration -> m_168797_
 Conflicting propagated mapping for com/bernardo/dbi/client/widget/IconBtn/renderWidget(Lnet/minecraft/client/gui/GuiGraphics;IIF)V from net/minecraft/client/gui/components/AbstractWidget/renderWidget(Lnet/minecraft/client/gui/GuiGraphics;IIF)V: renderWidget -> m_87963_
@@ -249,7 +249,6 @@ Writing Output: /workspaces/DragonBlockInfinity/build/reobfJar/output.jar
   assets/dragonblockinfinity/models/item/dirty_stone.json
   assets/dragonblockinfinity/models/item/goku_boots.json
   assets/dragonblockinfinity/models/item/goku_chestplate.json
-  assets/dragonblockinfinity/models/item/goku_helmet.json
   assets/dragonblockinfinity/models/item/goku_leggings.json
   assets/dragonblockinfinity/models/item/senzu_bean.json
   assets/dragonblockinfinity/models/item/senzu_bean_eating.json
@@ -296,8 +295,7 @@ Writing Output: /workspaces/DragonBlockInfinity/build/reobfJar/output.jar
   assets/dragonblockinfinity/textures/gui/gui.png
   assets/dragonblockinfinity/textures/gui/icons_btn.png
   assets/dragonblockinfinity/textures/item/
-  assets/dragonblockinfinity/textures/item/armor/
-  assets/dragonblockinfinity/textures/item/armor/dbi_goku_amor.png
+  assets/dragonblockinfinity/textures/item/dbi_goku_amor.png
   assets/dragonblockinfinity/textures/item/dbi_goku_bot.png
   assets/dragonblockinfinity/textures/item/dbi_goku_leg.png
   assets/dragonblockinfinity/textures/item/dbi_vegeta_armor.png
