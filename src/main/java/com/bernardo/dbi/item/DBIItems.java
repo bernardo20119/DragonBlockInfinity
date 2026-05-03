@@ -4,6 +4,7 @@ import com.bernardo.dbi.DragonBlockInfinity;
 import com.bernardo.dbi.block.DBIBlocks;
 import com.bernardo.dbi.item.armor.GokuArmorItem;
 import com.bernardo.dbi.entity.ModEntities;
+import com.bernardo.dbi.item.SenzuBeanItem;
 import net.minecraft.world.item.ArmorItem;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
@@ -55,10 +56,9 @@ public class DBIItems {
             .nutrition(12).saturationMod(0.8f).meat().build())));
 
     public static final RegistryObject<Item> SENZU_BEAN = ITEMS.register("senzu_bean",
-        () -> new Item(new Item.Properties().stacksTo(16)));
+        () -> new SenzuBeanItem());
 
     // ── ARMADURA GOKU ─────────────────────────────────────────────
-    public static final RegistryObject<Item> GOKU_HELMET     = ITEMS.register("goku_helmet",     () -> new GokuArmorItem(ArmorItem.Type.HELMET));
     public static final RegistryObject<Item> GOKU_CHESTPLATE = ITEMS.register("goku_chestplate", () -> new GokuArmorItem(ArmorItem.Type.CHESTPLATE));
     public static final RegistryObject<Item> GOKU_LEGGINGS   = ITEMS.register("goku_leggings",   () -> new GokuArmorItem(ArmorItem.Type.LEGGINGS));
     public static final RegistryObject<Item> GOKU_BOOTS      = ITEMS.register("goku_boots",      () -> new GokuArmorItem(ArmorItem.Type.BOOTS));

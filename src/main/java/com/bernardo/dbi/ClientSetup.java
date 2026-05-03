@@ -2,6 +2,9 @@ package com.bernardo.dbi;
 
 import com.bernardo.dbi.client.KeyBindings;
 import com.bernardo.dbi.entity.DinoRenderer;
+import com.bernardo.dbi.client.particle.ModParticles;
+import com.bernardo.dbi.client.particle.DinoMeatParticleProvider;
+import net.minecraftforge.client.event.RegisterParticleProvidersEvent;
 import com.bernardo.dbi.entity.ModEntities;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.client.event.EntityRenderersEvent;
@@ -19,6 +22,12 @@ public class ClientSetup {
     @SubscribeEvent
     public static void onRegisterKeyMappings(RegisterKeyMappingsEvent event) {
         KeyBindings.register(event);
+    }
+
+    @SubscribeEvent
+    public static void onRegisterParticles(net.minecraftforge.client.event.RegisterParticleProvidersEvent event) {
+        event.registerSpriteSet(ModParticles.DINO_MEAT_RAW.get(), DinoMeatParticleProvider::new);
+        event.registerSpriteSet(ModParticles.DINO_MEAT_COOKED.get(), DinoMeatParticleProvider::new);
     }
 
     @SubscribeEvent
